@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate OHP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header class="sticky top-0 z-50">
+        <!-- Navbar -->
+        <div class="navbar bg-[#F9F7F3] py-6 px-20 ">
+            <div class="navbar-start">
+              <a href="history.html"><button class="bg-green-500 rounded-lg py-3 px-6 text-white">Blog</button></a>
+            </div>
+            <div class="navbar-center  lg:flex">
+              <img src="assets/logo.png" alt="">
+              <h1>Donate Bangladesh</h1>
+            </div>
+            <div class="navbar-end">
+                <img src="assets/coin.png" alt="">
+                <h1>5500 BDT</h1>
+            </div>
+        </di>
+    </header>
+    <main>
+        <!-- Main section design -->
+        <div class="mt-16">
+            <div class="flex justify-center gap-6">
+                <a><button class="bg-green-500 rounded-lg py-3 px-8 text-white">Donation</button></a>
+                <a><button class="bg-white border rounded-lg py-3 px-8 text-black">History</button></a>
+            </div>
+        </div>
+        <!-- Card Section Design -->
+         <!-- card-1 -->
+        <div class="mx-28 mt-6">
+            <div class="card p-8 border lg:card-side bg-base-100">
+                <figure>
+                  <img
+                    src="assets/feni.png"
+                    alt="Album" />
+                </figure>
+                <div class="card-body">
+                  <button class="flex btn w-[150px]" id="totalDonate">
+                    <img src="assets/coin.png" alt="">
+                    BDT
+                  </button>
+                  <h2 class="card-title">Donate for Flood at Noakhali</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ratione corporis obcaecati ea architecto reiciendis perferendis suscipit corrupti eum doloremque fugiat aspernatur quidem blanditiis, illo ex laboriosam sit harum repellendus..</p>
+                  <input type="number" id="donateAmount" placeholder="Write Donation Amount" class="p-4 border rounded-lg">
+                  <div class="card-actions">
+                    <button class="bg-green-500 w-full rounded-lg py-3 px-8 text-white" id="donateNow"  onclick="cardModal.showModal()">Donate Now</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- card-2 -->
+        <div class="mx-28 mt-10">
+            <div class="card p-8 border lg:card-side bg-base-100">
+                <figure>
+                  <img
+                    src="assets/noakhali.png"
+                    alt="Album" />
+                </figure>
+                <div class="card-body">
+                  <button class="flex btn w-[150px]">
+                    <img src="assets/coin.png" alt="">
+                    5500 BDT
+                  </button>
+                  <h2 class="card-title">Donate for Flood at Noakhali</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ratione corporis obcaecati ea architecto reiciendis perferendis suscipit corrupti eum doloremque fugiat aspernatur quidem blanditiis, illo ex laboriosam sit harum repellendus..</p>
+                  <input type="text" placeholder="Write Donation Amount" class="p-4 border rounded-lg">
+                  <div class="card-actions">
+                    <button class="bg-green-500 w-full rounded-lg py-3 px-8 text-white">Donation</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- card-3 -->
+        <div class="mx-28 mt-10">
+            <div class="card p-8 border lg:card-side bg-base-100">
+                <figure>
+                  <img
+                    src="assets/quota-protest.png"
+                    alt="Album" />
+                </figure>
+                <div class="card-body">
+                  <button class="flex btn w-[150px]">
+                    <img src="assets/coin.png" alt="">
+                    5500 BDT
+                  </button>
+                  <h2 class="card-title">Donate for Flood at Noakhali</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ratione corporis obcaecati ea architecto reiciendis perferendis suscipit corrupti eum doloremque fugiat aspernatur quidem blanditiis, illo ex laboriosam sit harum repellendus..</p>
+                  <input type="text" placeholder="Write Donation Amount" class="p-4 border rounded-lg">
+                  <div class="card-actions">
+                    <button class="bg-green-500 w-full rounded-lg py-3 px-8 text-white">Donation</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card Modal -->
+        <dialog id="cardModal" class="modal">
+            <div class="modal-box">
+              <h3 class="text-lg font-bold">Hello!</h3>
+              <p class="py-4">Press ESC key or click the button below to close</p>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+    </main>
+    <footer class="bg-[#F9F7F3] h-24 mt-20">
+
+    </footer>
+    
+    <script src="Js/index.js"></script>
+</body>
+</html>
