@@ -14,11 +14,17 @@ document.querySelectorAll('.donateNow').forEach((button, index)=>{
             alert("Please enter valid amount");
             return;
         }
-
         const {totalDonate, remainingBalance:balance}=calculateDonate(donateEntry, donateSum);
         donateSum.textContent=totalDonate + 'BDT';
         document.getElementById('mainBalance').textContent=balance+'BDT';
         this.closest('.card-body').querySelector('.donateAmount').value='';
+        const modal=document.getElementById('myModal');
+        modal.style.display='block';
+        modal.classList.remove('hidden');
+        modal.showModal();
 
     });
 });
+
+
+

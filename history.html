@@ -8,9 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="sticky top-0 z-50">
+    <header class="sticky top-0 z-50 bg-[#F9F7F3]">
         <!-- Navbar -->
-        <div class="navbar bg-[#F9F7F3] py-6 px-20 sticky">
+        <div class="navbar  py-6 px-20 ">
             <div class="navbar-start">
               <a href="index.html"><button class="bg-green-500 rounded-lg py-3 px-6 text-white">Home</button></a>
             </div>
@@ -20,12 +20,39 @@
             </div>
             <div class="navbar-end">
                 <img src="assets/coin.png" alt="">
-                <h1>5500 BDT</h1>
+                <h1 id="mainBalance">15000 BDT</h1>
             </div>
-        </di>
+        </div>
+        <!-- history & donation button -->
+        <div class="mt-10 pb-10">
+          <div class="flex justify-center gap-6">
+              <a><button class="bg-green-500 rounded-lg py-3 px-8 text-white">Donation</button></a>
+              <a><button class="bg-white border rounded-lg py-3 px-8 text-black">History</button></a>
+          </div>
+         </div>
     </header>
     <main>
-        
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
     </main>
     <footer class="bg-[#F9F7F3] h-24 mt-20">
 

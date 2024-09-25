@@ -8,9 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <header class="sticky top-0 z-50">
+    <header class="sticky top-0 z-50 bg-[#F9F7F3]">
         <!-- Navbar -->
-        <div class="navbar bg-[#F9F7F3] py-6 px-20 ">
+        <div class="navbar  py-6 px-20 ">
             <div class="navbar-start">
               <a href="history.html"><button class="bg-green-500 rounded-lg py-3 px-6 text-white">Blog</button></a>
             </div>
@@ -22,17 +22,16 @@
                 <img src="assets/coin.png" alt="">
                 <h1 id="mainBalance">15000 BDT</h1>
             </div>
-        </di>
-    </header>
-    <main>
-        <!-- Main section design -->
-        <div class="mt-16">
-            <div class="flex justify-center gap-6">
-                <a><button class="bg-green-500 rounded-lg py-3 px-8 text-white">Donation</button></a>
-                <a><button class="bg-white border rounded-lg py-3 px-8 text-black">History</button></a>
-            </div>
         </div>
-        <!-- Card Section Design -->
+        <!-- history & donation button -->
+        <div class="mt-10 pb-10">
+          <div class="flex justify-center gap-6">
+              <a><button class="bg-green-500 rounded-lg py-3 px-8 text-white">Donation</button></a>
+              <a><button class="bg-white border rounded-lg py-3 px-8 text-black">History</button></a>
+          </div>
+         </div>
+    </header>
+    <main class="mt-24">
          <!-- card-1 -->
         <div class="mx-28 mt-6">
             <div class="card p-8 border lg:card-side bg-base-100">
@@ -50,7 +49,7 @@
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ratione corporis obcaecati ea architecto reiciendis perferendis suscipit corrupti eum doloremque fugiat aspernatur quidem blanditiis, illo ex laboriosam sit harum repellendus..</p>
                   <input type="number" class="donateAmount" placeholder="Write Donation Amount" class="p-4 border rounded-lg">
                   <div class="card-actions">
-                    <button class="bg-green-500 w-full rounded-lg py-3 px-8 text-white donateNow">Donate Now</button>
+                    <button class="bg-green-500 w-full rounded-lg py-3 px-8 text-white donateNow" id="donateNow">Donate Now</button>
                   </div>
                 </div>
             </div>
@@ -99,19 +98,18 @@
               </div>
           </div>
       </div>
-        <!-- Card Modal -->
-        <dialog id="cardModal" class="modal">
-            <div class="modal-box">
-              <h3 class="text-lg font-bold">Hello!</h3>
-              <p class="py-4">Press ESC key or click the button below to close</p>
-              <div class="modal-action">
-                <form method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Close</button>
-                </form>
-              </div>
+        <!-- Modal -->
+        <dialog id="myModal" className="modal">
+          <div className="modal-box w-11/12 max-w-5xl">
+            <h3 className="font-bold text-lg">Hello!</h3>
+            <p className="py-4">Click the button below to close</p>
+            <div className="modal-action">
+              <form method="dialog">
+                <button className="btn">Close</button>
+              </form>
             </div>
-          </dialog>
+          </div>
+        </dialog>
     </main>
     <footer class="bg-[#F9F7F3] h-24 mt-20">
 
