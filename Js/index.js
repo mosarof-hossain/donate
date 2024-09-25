@@ -10,6 +10,7 @@ document.querySelectorAll('.donateNow').forEach((button, index)=>{
     button.addEventListener('click', function(){
         const donateEntry=parseFloat(this.closest('.card-body').querySelector('.donateAmount').value);
         const donateSum=document.querySelectorAll('.totalDonate')[index];
+        const donateName=this.closest('.card-body').querySelector('.card-title').textContent;
         if(isNaN(donateEntry) || donateEntry<=0 || donateEntry>remainingBalance){
             alert("Please enter valid amount");
             return;
@@ -18,11 +19,24 @@ document.querySelectorAll('.donateNow').forEach((button, index)=>{
         donateSum.textContent=totalDonate + 'BDT';
         document.getElementById('mainBalance').textContent=balance+'BDT';
         this.closest('.card-body').querySelector('.donateAmount').value='';
+        historyAppend(donateEntry,donateName)
+
         const modal=document.getElementById('myModal');
         modal.showModal();
 
     });
 });
+// Function show history 
+function historyAppend(donate,donateN){
+    const historyDiv=document.getElementById('historyInfo');
+    const historyList=document.createElement("div");
+    historyList.innerHTML=`
+    <p class="font-bold">${donate} Taka is ${donateN}</p>
+    <p class="text-sm text-gray-500">Date: ${new Date().toLocaleString()}</p>
+`;
+historyDiv.appendChild(historyList);
+
+}
 
 // history tab & domain tab functionality
 const history=document.getElementById('historyTab');
@@ -46,5 +60,7 @@ donation.addEventListener("click", function(){
     donationContent.classList.remove('hidden');
     historyInfo.classList.add('hidden');
 });
+
+
 
 
