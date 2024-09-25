@@ -21,7 +21,7 @@ document.querySelectorAll('.donateNow').forEach((button, index)=>{
         this.closest('.card-body').querySelector('.donateAmount').value='';
         historyAppend(donateEntry,donateName)
 
-        const modal=document.getElementById('myModal');
+        const modal=document.getElementById('my_modal_4');
         modal.showModal();
 
     });
@@ -31,8 +31,11 @@ function historyAppend(donate,donateN){
     const historyDiv=document.getElementById('historyInfo');
     const historyList=document.createElement("div");
     historyList.innerHTML=`
-    <p class="font-bold">${donate} Taka is ${donateN}</p>
-    <p class="text-sm text-gray-500">Date: ${new Date().toLocaleString()}</p>
+    <div class="border mb-8 p-6 rounded-lg">
+        <p class="font-bold text-lg">${donate} Taka is ${donateN}</p>
+        <p class="text-sm text-gray-500 mt-4">Date: ${new Date().toLocaleString()}</p>
+    </div>
+    
 `;
 historyDiv.appendChild(historyList);
 

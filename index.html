@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body class="min-h-screen flex flex-col">
     <header class="sticky top-0 z-50 bg-[#F9F7F3]">
         <!-- Navbar -->
         <div class="navbar  py-6 px-20 ">
@@ -31,7 +31,7 @@
           </div>
          </div>
     </header>
-    <main class="mt-24">
+    <main class="mt-24 flex-grow">
       <div id="donationContent">
           <!-- card-1 -->
         <div class="mx-28 mt-6">
@@ -101,13 +101,12 @@
     </div>
     </div>
     <!-- History Tab -->
-    <div id="historyInfo" class="mx-36 h-72">
-        <h1>history</h1>
+    <div id="historyInfo" class="mx-36 h-auto">
     </div>
 
 
       <!-- Modal -->
-        <dialog id="myModal" className="modal">
+        <dialog id="my_modal_4" className="modal">
           <div className="modal-box w-11/12 max-w-5xl">
             <h3 className="font-bold text-lg">Hello!</h3>
             <p className="py-4">Click the button below to close</p>
@@ -119,7 +118,7 @@
           </div>
         </dialog>
     </main>
-    <footer class="bg-[#F9F7F3] h-24 mt-20">
+    <footer class="bg-[#dfdddb] h-24 mt-20">
 
     </footer>
     
