@@ -19,12 +19,32 @@ document.querySelectorAll('.donateNow').forEach((button, index)=>{
         document.getElementById('mainBalance').textContent=balance+'BDT';
         this.closest('.card-body').querySelector('.donateAmount').value='';
         const modal=document.getElementById('myModal');
-        modal.style.display='block';
-        modal.classList.remove('hidden');
         modal.showModal();
 
     });
 });
 
+// history tab & domain tab functionality
+const history=document.getElementById('historyTab');
+const donation=document.getElementById('donationTab');
+const donationContent=document.getElementById('donationContent');
+const historyInfo=document.getElementById('historyInfo');
+history.addEventListener("click", function(){
+    history.classList.add('bg-green-500', 'text-white' );
+    history.classList.remove('bg-white', 'text-black' );
+    donation.classList.remove('bg-green-500', 'text-white' );
+    donation.classList.add('bg-white', 'text-black'  );
+    historyInfo.classList.remove('hidden');
+    donationContent.classList.add('hidden');
+});
+
+donation.addEventListener("click", function(){
+    donation.classList.add('bg-green-500', 'text-white' );
+    donation.classList.remove('bg-white', 'text-black' );
+    history.classList.remove('bg-green-500', 'text-white' );
+    history.classList.add('bg-white', 'text-black'  );
+    donationContent.classList.remove('hidden');
+    historyInfo.classList.add('hidden');
+});
 
 
