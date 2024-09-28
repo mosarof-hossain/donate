@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="min-h-screen flex flex-col">
     <header class="sticky top-0 z-50 bg-[#F9F7F3]">
         <!-- Navbar -->
         <div class="navbar  py-6 px-20 ">
@@ -23,21 +23,13 @@
                 <h1 id="mainBalance">15000 BDT</h1>
             </div>
         </div>
-        <!-- history & donation button -->
-        <div class="mt-10 pb-10">
-          <div class="flex justify-center gap-6">
-              <a><button class="bg-green-500 rounded-lg py-3 px-8 text-white" id="donationTab">Donation</button></a>
-              <a><button class="bg-white border rounded-lg py-3 px-8 text-black" id="historyTab">History</button></a>
-          </div>
-         </div>
     </header>
-    <main>
-      <div class="flex px-2">
-        <h1 class="text-2xl font-extrabold bg-base-200">Important FAQs</h1>
-        <img src="assets/faq.jpg" alt="">
+    <main class="px-2 overflow-hidden lg:px-10 pt-10 bg-base-200 min-h-screen">
+      <div class="flex px-2 bg-base-200 items-center">
+        <h1 class="text-3xl font-bold ">Important FAQs</h1>
+        <img src="assets/faq.png" alt="">
       </div>
-
-        <div class="collapse collapse-arrow bg-base-200">
+        <div class="collapse collapse-arrow bg-base-200 border">
            
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div class="collapse-title text-xl font-medium">What types of donations can I make?</div>
@@ -45,14 +37,28 @@
               <p>You can make one-time donations, recurring donations, and in-kind contributions to various causes and projects.</p>
             </div>
           </div>
-          <div class="collapse collapse-arrow bg-base-200">
+          <div class="collapse collapse-arrow bg-base-200 border">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">How is my donation used?</div>
             <div class="collapse-content">
               <p>Donations are allocated to specific projects, and we provide detailed reports to ensure transparency on how funds are utilized.You can make one-time donations, recurring donations, and in-kind contributions to various causes and projects.</p>
             </div>
           </div>
-          <div class="collapse collapse-arrow bg-base-200">
+          <div class="collapse collapse-arrow bg-base-200 border">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Can I track my donation history?</div>
+            <div class="collapse-content">
+              <p>Yes, you can view your donation history by logging into your account on our platform.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 border">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What should I do if I have a problem with my donation?</div>
+            <div class="collapse-content">
+              <p>If you encounter any issues, please contact our support team at support email or call us at support phone number.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 border">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">Can I track my donation history?</div>
             <div class="collapse-content">
@@ -60,10 +66,6 @@
             </div>
           </div>
     </main>
-    <footer class="bg-[#F9F7F3] h-24 mt-20">
-
-    </footer>
-    
     <script src="Js/index.js"></script>
 </body>
 </html>

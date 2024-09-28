@@ -10,13 +10,13 @@
 <body class="min-h-screen flex flex-col">
     <header class="sticky top-0 z-50 bg-[#F9F7F3]">
         <!-- Navbar -->
-        <div class="navbar  py-6 px-20 ">
-            <div class="navbar-start">
-              <a href="blog.html"><button class="bg-green-500 rounded-lg py-3 px-6 text-white">Blog</button></a>
+        <div class="navbar py-2 lg:py-6 px-6 lg:px-20 gap-x-10 ">
+            <div class="navbar-start hidden lg:block">
+              <a href="blog.html"><button class=" bg-green-500 rounded-lg py-3 px-6 text-white">Blog</button></a>
             </div>
-            <div class="navbar-center  lg:flex gap-x-2">
+            <div class="navbar-start lg:navbar-center">
               <img src="assets/logo.png" alt="">
-              <h1 class="text-2xl font-extrabold">Donate Bangladesh</h1>
+              <h1 class="hidden lg:block text-2xl font-extrabold">Donate Bangladesh</h1>
             </div>
             <div class="navbar-end">
                 <img src="assets/coin.png" alt="">
@@ -31,11 +31,11 @@
           </div>
          </div>
     </header>
-    <main class="mt-24 flex-grow">
+    <main class="mt-10 lg:mt-24 flex-grow">
       <div id="donationContent">
           <!-- card-1 -->
-        <div class="mx-28 mt-6">
-          <div class="card p-8 border lg:card-side bg-base-100">
+        <div class="mx-4 lg:mx-28 mt-6">
+          <div class="card p-4 lg:p-8 border lg:card-side bg-base-100">
               <figure>
                 <img
                   src="assets/quota-protest.png"
@@ -56,8 +56,8 @@
           </div>
         </div>
       <!-- card-2 -->
-        <div class="mx-28 mt-6">
-         <div class="card p-8 border lg:card-side bg-base-100">
+        <div class="mx-4 lg:mx-28 mt-6">
+         <div class="card p-4 lg:p-8 border lg:card-side bg-base-100">
             <figure>
               <img
                 src="assets/feni.png"
@@ -78,8 +78,8 @@
          </div>
         </div>
       <!-- card-3 -->
-        <div class="mx-28 mt-6">
-         <div class="card p-8 border lg:card-side bg-base-100">
+        <div class="mx-4 lg:mx-28 mt-6">
+         <div class="card p-4 lg:p-8 border lg:card-side bg-base-100">
             <figure>
               <img
                 src="assets/noakhali.png"
@@ -101,7 +101,7 @@
     </div>
     </div>
     <!-- History Tab -->
-    <div id="historyInfo" class="mx-36 h-auto">
+    <div id="historyInfo" class="mx-10 lg:mx-36 h-auto">
     </div>
       <!-- Modal -->
         <div id="myModal" class="modal">
