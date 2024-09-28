@@ -14,9 +14,9 @@
             <div class="navbar-start">
               <a href="blog.html"><button class="bg-green-500 rounded-lg py-3 px-6 text-white">Blog</button></a>
             </div>
-            <div class="navbar-center  lg:flex">
+            <div class="navbar-center  lg:flex gap-x-2">
               <img src="assets/logo.png" alt="">
-              <h1>Donate Bangladesh</h1>
+              <h1 class="text-2xl font-extrabold">Donate Bangladesh</h1>
             </div>
             <div class="navbar-end">
                 <img src="assets/coin.png" alt="">
@@ -38,17 +38,17 @@
           <div class="card p-8 border lg:card-side bg-base-100">
               <figure>
                 <img
-                  src="assets/feni.png"
+                  src="assets/quota-protest.png"
                   alt="Album" />
               </figure>
-              <div class="card-body">
-                <button class="flex btn w-[150px] totalDonate">
+              <div class="card-body flex flex-col">
+                <button class="flex btn w-[150px]">
                   <img src="assets/coin.png" alt="">
-                  BDT
+                   <h1 class="totalDonate">00 BDT</h1>
                 </button>
-                <h2 class="card-title">Donate for Flood at Noakhali</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ratione corporis obcaecati ea architecto reiciendis perferendis suscipit corrupti eum doloremque fugiat aspernatur quidem blanditiis, illo ex laboriosam sit harum repellendus..</p>
-                <input type="number" class="donateAmount" placeholder="Write Donation Amount" class="p-4 border rounded-lg">
+                <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+                <p>Join us in supporting those injured during the Quota Reform Movement. Many students and activists suffered serious injuries while advocating for equal opportunities in public sector jobs. Your contribution can help cover medical expenses and provide crucial support to the victims.</p>
+                <input type="text" class="donateAmount p-3 border rounded-xl" placeholder="Write Donation Amount" class="p-4 border rounded-lg">
                 <div class="card-actions">
                   <button class="bg-green-500 w-full rounded-lg py-3 px-8 text-white donateNow" id="donateNow">Donate Now</button>
                 </div>
@@ -60,17 +60,17 @@
          <div class="card p-8 border lg:card-side bg-base-100">
             <figure>
               <img
-                src="assets/noakhali.png"
+                src="assets/feni.png"
                 alt="Album" />
             </figure>
-            <div class="card-body">
+            <div class="card-body flex flex-col">
               <button class="flex btn w-[150px] totalDonate">
                 <img src="assets/coin.png" alt="">
-                BDT
+                <h1 class="totalDonate">00 BDT</h1>
               </button>
-              <h2 class="card-title"  id="donateName">Donate for Flood at Noakhali</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ratione corporis obcaecati ea architecto reiciendis perferendis suscipit corrupti eum doloremque fugiat aspernatur quidem blanditiis, illo ex laboriosam sit harum repellendus..</p>
-              <input type="number" class="donateAmount" placeholder="Write Donation Amount" class="p-4 border rounded-lg">
+              <h2 class="card-title"  id="donateName">Donate for Flood Relief in Feni,Bangladesh</h2>
+              <p>Join us in supporting the people of Feni, Bangladesh, who are battling the devastating effects of recent floods. Thousands of families have been displaced, and essential infrastructure has been severely damaged. </p>
+              <input type="text" class="donateAmount p-3 border rounded-xl" placeholder="Write Donation Amount" class="p-4 border rounded-lg">
               <div class="card-actions">
                 <button class="bg-green-500 w-full rounded-lg py-3 px-8 text-white donateNow">Donate Now</button>
               </div>
@@ -82,17 +82,17 @@
          <div class="card p-8 border lg:card-side bg-base-100">
             <figure>
               <img
-                src="assets/quota-protest.png"
+                src="assets/noakhali.png"
                 alt="Album" />
             </figure>
-            <div class="card-body">
+            <div class="card-body flex flex-col">
               <button class="flex btn w-[150px] totalDonate">
                 <img src="assets/coin.png" alt="">
-                BDT
+                <h1 class="totalDonate">00 BDT</h1>
               </button>
-              <h2 class="card-title">Donate for Flood at Noakhali</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ratione corporis obcaecati ea architecto reiciendis perferendis suscipit corrupti eum doloremque fugiat aspernatur quidem blanditiis, illo ex laboriosam sit harum repellendus..</p>
-              <input type="number" class="donateAmount" placeholder="Write Donation Amount" class="p-4 border rounded-lg">
+              <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+              <p>Join us in supporting the people of Noakhali, Bangladesh, who are battling the devastating effects of recent floods. Thousands of families have been displaced, and essential infrastructure has been severely damaged.</p>
+              <input type="text" class="donateAmount p-3 border rounded-xl" placeholder="Write Donation Amount" class="p-4 border rounded-lg">
               <div class="card-actions">
                 <button class="bg-green-500 w-full rounded-lg py-3 px-8 text-white donateNow">Donate Now</button>
               </div>
@@ -103,23 +103,19 @@
     <!-- History Tab -->
     <div id="historyInfo" class="mx-36 h-auto">
     </div>
-
-
       <!-- Modal -->
-        <dialog id="my_modal_4" className="modal">
-          <div className="modal-box w-11/12 max-w-5xl">
-            <h3 className="font-bold text-lg">Hello!</h3>
-            <p className="py-4">Click the button below to close</p>
-            <div className="modal-action">
-              <form method="dialog">
-                <button className="btn">Close</button>
-              </form>
+        <div id="myModal" class="modal">
+          <div class="modal-box w-11/12 max-w-2xl flex flex-col items-center gap-y-4">
+            <h3 class="font-bold text-xl">Congrates!</h3>
+            <img src="assets/coin.png" class="text-center">
+            <p class="py-4">You Have Donated for HumanKind</p>
+            <div class="modal-action">
+                <button id="closeModal" class="btn">Close Confirmation</button>
             </div>
           </div>
-        </dialog>
+        </div>
     </main>
     <footer class="bg-[#dfdddb] h-24 mt-20">
-
     </footer>
     
     <script src="Js/index.js"></script>

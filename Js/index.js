@@ -21,11 +21,18 @@ document.querySelectorAll('.donateNow').forEach((button, index)=>{
         this.closest('.card-body').querySelector('.donateAmount').value='';
         historyAppend(donateEntry,donateName)
 
-        const modal=document.getElementById('my_modal_4');
-        modal.showModal();
+        const modal=document.getElementById('myModal');
+        modal.classList.add('modal-open');
 
     });
 });
+// modal close
+document.getElementById('closeModal').addEventListener('click',function(){
+    const modal=document.getElementById('myModal');
+    modal.classList.remove('modal-open');
+});
+
+
 // Function show history 
 function historyAppend(donate,donateN){
     const historyDiv=document.getElementById('historyInfo');
@@ -33,11 +40,12 @@ function historyAppend(donate,donateN){
     historyList.innerHTML=`
     <div class="border mb-8 p-6 rounded-lg">
         <p class="font-bold text-lg">${donate} Taka is ${donateN}</p>
-        <p class="text-sm text-gray-500 mt-4">Date: ${new Date().toLocaleString()}</p>
+        <p class="text-sm px-2 text-gray-500 mt-4">Date: ${new Date().toLocaleString()}</p>
     </div>
     
 `;
 historyDiv.appendChild(historyList);
+historyInfo.classList.add('hidden');
 
 }
 
