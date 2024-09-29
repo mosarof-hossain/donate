@@ -1,4 +1,4 @@
-let remainingBalance=5000;
+let remainingBalance=15000;
 function calculateDonate(donateAmount, donateSum){
         let donateA=parseFloat(donateSum.textContent) || 0;
         let totalDonate=donateA+donateAmount;
@@ -55,18 +55,18 @@ const donation=document.getElementById('donationTab');
 const donationContent=document.getElementById('donationContent');
 const historyInfo=document.getElementById('historyInfo');
 history.addEventListener("click", function(){
-    history.classList.add('bg-green-500', 'text-white' );
+    history.classList.add('bg-lime-400', 'text-white' );
     history.classList.remove('bg-white', 'text-black' );
-    donation.classList.remove('bg-green-500', 'text-white' );
+    donation.classList.remove('bg-lime-400', 'text-white' );
     donation.classList.add('bg-white', 'text-black'  );
     historyInfo.classList.remove('hidden');
     donationContent.classList.add('hidden');
 });
 
 donation.addEventListener("click", function(){
-    donation.classList.add('bg-green-500', 'text-white' );
+    donation.classList.add('bg-lime-400', 'text-white' );
     donation.classList.remove('bg-white', 'text-black' );
-    history.classList.remove('bg-green-500', 'text-white' );
+    history.classList.remove('bg-lime-400', 'text-white' );
     history.classList.add('bg-white', 'text-black'  );
     donationContent.classList.remove('hidden');
     historyInfo.classList.add('hidden');
