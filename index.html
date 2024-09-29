@@ -10,15 +10,15 @@
 <body class="min-h-screen flex flex-col">
     <header class="sticky top-0 z-50 bg-[#F9F7F3]">
         <!-- Navbar -->
-        <div class="navbar py-2 lg:py-6 px-6 lg:px-20 gap-x-10 ">
-            <div class="navbar-start hidden lg:block">
+        <div class="navbar py-2 lg:py-6 px-6 lg:px-20 gap-x-10 flex justify-between items-center ">
+            <div class="hidden lg:block">
               <a href="blog.html"><button class=" bg-green-500 rounded-lg py-3 px-6 text-white">Blog</button></a>
             </div>
-            <div class="navbar-start lg:navbar-center">
+            <div class="flex items-center gap-x-4">
               <img src="assets/logo.png" alt="">
               <h1 class="hidden lg:block text-2xl font-extrabold">Donate Bangladesh</h1>
             </div>
-            <div class="navbar-end">
+            <div class="flex items-center gap-x-2">
                 <img src="assets/coin.png" alt="">
                 <h1 id="mainBalance">15000 BDT</h1>
             </div>
@@ -31,12 +31,12 @@
           </div>
          </div>
     </header>
-    <main class="mt-10 lg:mt-24 flex-grow">
+    <main class="mt-10 lg:mt-24 flex-grow bg-white">
       <div id="donationContent">
           <!-- card-1 -->
         <div class="mx-4 lg:mx-28 mt-6">
           <div class="card p-4 lg:p-8 border lg:card-side bg-base-100">
-              <figure>
+              <figure class="lg:w-[700px]">
                 <img
                   src="assets/quota-protest.png"
                   alt="Album" />
@@ -109,6 +109,7 @@
             <h3 class="font-bold text-xl">Congrates!</h3>
             <img src="assets/coin.png" class="text-center">
             <p class="py-4">You Have Donated for HumanKind</p>
+            <span class="font-bold text-xl">Successfully</span>
             <div class="modal-action">
                 <button id="closeModal" class="btn">Close Confirmation</button>
             </div>
